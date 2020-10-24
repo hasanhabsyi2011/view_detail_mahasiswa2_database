@@ -1,5 +1,5 @@
 CREATE   
-VIEW `day26`.`detail_mahasiswa2` 
+VIEW `db_day26`.`detail_mahasiswa2` 
     AS (SELECT
     `mahasiswa`.`nim`
     , `mahasiswa`.`nama`
@@ -7,6 +7,6 @@ VIEW `day26`.`detail_mahasiswa2`
     , `universitas`.`nama_dekan`
     , `universitas`.`akr`
 FROM
-    `day26`.`universitas`
-    INNER JOIN `day26`.`mahasiswa` 
+    `db_day26`.`universitas`
+    INNER JOIN `db_day26`.`mahasiswa` 
         ON (`universitas`.`jurusan` = `mahasiswa`.`jurusan`));
